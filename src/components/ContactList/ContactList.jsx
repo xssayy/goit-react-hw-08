@@ -6,7 +6,7 @@ import {
   selectVisibleContacts,
   selectError,
   selectIsLoading,
-} from "../../redux/selectors";
+} from "../../redux/contacts/selectors";
 
 const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
