@@ -3,14 +3,16 @@ import { register, logIn, logOut, refreshUser } from "./operations";
 
 export const authSlice = createSlice({
   name: "auth",
-  user: {
-    name: null,
-    email: null,
+  initialState: {
+    user: {
+      name: null,
+      email: null,
+      password: null,
+    },
+    token: null,
+    isLoggedIn: false,
+    isRefreshing: false,
   },
-  token: null,
-  isLoggedIn: false,
-  isRefreshing: false,
-
   extraReducers: (builder) => {
     builder.addCase(register.fulfilled, (state, action) => {
       state.user = action.payload.user;

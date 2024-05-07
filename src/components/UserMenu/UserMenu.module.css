@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.welcome {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.button {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid rgb(190, 183, 183);
+  background-color: rgb(156, 151, 175);
+  padding: 5px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.button:hover {
+  color: white;
+}
