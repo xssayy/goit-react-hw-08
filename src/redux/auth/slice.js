@@ -40,6 +40,9 @@ export const authSlice = createSlice({
       state.isLoggedIn = true;
       state.isRefreshing = false;
     });
+    builder.addCase(refreshUser.rejected, (state) => {
+      state.isRefreshing = false;
+    });
   },
 });
 
